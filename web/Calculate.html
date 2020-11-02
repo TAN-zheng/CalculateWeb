@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSPTest</title>
+</head>
+<body>
+
+<table>
+    <tr><td colspan="4"><input id="sum" type="text" /></td></tr>
+    <tr>
+        <td><input type="button" value="1" onclick="click1(this.value)"/></td>
+        <td><input type="button" value="2" onclick="click1(this.value)"/></td>
+        <td><input type="button" value="3" onclick="click1(this.value)"/></td>
+        <td><input type="button" value="+" onclick="click1(this.value)"/></td>
+        <td><input type="button" value="=" onclick="dy(this.value)"/></td>
+    </tr>
+
+</table>
+<script>
+    function click1(value) {
+        document.getElementById("sum").value=document.getElementById("sum").value+value;
+    }
+    function dy(value) {
+        document.getElementById("sum").value=eval(document.getElementById("sum").value)
+    }
+</script>
+</body>
+</html>
